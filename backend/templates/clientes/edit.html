@@ -1,0 +1,18 @@
+Formulario para editar
+
+{% for cliente in clientes %}
+<form method="post" action="/store" enctype="multipart/form-data">
+    ID:
+    <input type="text" value="{{ cliente[0] }}" name="txtID" id="txtID">
+    Nombre:
+    <input type="text" value="{{ cliente[1] }}" name="txtNombre" id="txt
+    Nombre">
+    <br>
+    Correo:
+    <input type="text" value="{{ cliente[2] }}" name="txtCorreo" id="txt
+    Correo">
+    <br>
+    <br>
+    <input type="submit" value="Agregar">
+    </form>
+{% endfor %}
